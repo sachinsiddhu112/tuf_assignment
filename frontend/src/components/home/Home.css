@@ -1,0 +1,125 @@
+body{
+    margin: 0px;
+    background: #212529;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-bannar{
+    position: relative;
+    top: 20px;
+    right: -30vw;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+   
+    border:2px solid orange;
+    cursor: pointer;
+}
+.edit-bannar:hover{
+    background-color: orange;
+    border: 2px solid white;
+ }
+.bannar{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    border: 2px solid orange;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    height: 150px;
+    padding: 10px 10px;
+    
+   
+    transition: transform 2s ease-in-out,opacity 2s ease-in-out;
+}
+
+
+.hideBannar{
+    transform: translateX(-800px);
+    opacity: 0;
+}
+
+.section1{
+display: flex;
+ 
+ justify-content: space-between;
+ transform: translateX(200px);
+ width: 100%;
+ max-width: 300px;
+
+}
+.timer{
+    background-color: white;
+    color: black;
+    width: 20px;
+    padding: 7px 7px;
+}
+.section2{
+
+}
+.hero{
+display: flex;
+flex-direction: column;
+
+}
+.heading1{
+color: white;
+font-size: 70px;
+font-family:Arial, Helvetica, sans-serif;
+margin-bottom: 20px;
+}
+.heading2{
+color: white;
+font-size: x-large;
+font-family:Arial, Helvetica, sans-serif
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+
+}
+.btn1{
+background-color: white;
+color: black;
+width: 200px;
+height: 45px;
+border-radius: 7px;
+font-size: large;
+cursor: pointer;
+}
+.btn2{
+    background-color: #212529;
+    color: white;
+    width: 200px;
+height: 45px;
+border: 2px solid white;
+border-radius: 7px;
+font-size: large;
+cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .btns{
+        flex-direction: column;
+    }
+   .edit-bannar{
+    margin-top: 10px;
+    right: -37vw;
+   }
+   .bannar{
+    margin-top: 100px;
+    width: 230px;
+    height:fit-content;
+   }
+   .section1{
+    transform: translateX(0px);
+   }
+}
