@@ -59,6 +59,6 @@ app.put("/update_bannar",(req,res) => {
 })
 
 //app running on this port
-app.listen(8081,()=>{
+app.listen(process.env.PORT,()=>{
 console.log("Running...");
 })
