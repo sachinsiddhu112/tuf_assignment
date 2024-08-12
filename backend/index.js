@@ -22,7 +22,7 @@ app.get("/bannar_data",(req,res) => {
 
         if(err) {
             console.log(err)
-            return res.json({Error:"Error in getting data from server"});}
+            return res.json({Error:err});}
 
         return res.json(result);
     })
@@ -42,7 +42,7 @@ app.put("/update_bannar",(req,res) => {
 
         if(err) {
             console.log(err)
-            return res.json({Error:"Error in updating data in server"});}
+            return res.json({Error:err});}
 
         
     })
@@ -52,13 +52,13 @@ app.put("/update_bannar",(req,res) => {
 
         if(err) {
             console.log(err)
-            return res.json({Error:"Error in getting data from server"});}
+            return res.json({Error:err});}
 
         return res.json(result);
     })
 })
 
 //app running on this port
-app.listen(process.env.PORT,()=>{
+app.listen(process.env,()=>{
 console.log("Running...");
 })
