@@ -13,6 +13,7 @@ env.config();
 const db = mysql.createConnection({
     host:process.env.HOST,
     user:process.env.USER,
+    password:process.env.PASS,
     database:process.env.DATABASE
 });
 
@@ -59,6 +60,6 @@ app.put("/update_bannar",(req,res) => {
 })
 
 //app running on this port
-app.listen(process.env,()=>{
+app.listen(process.env.PORT,()=>{
 console.log("Running...");
 })
